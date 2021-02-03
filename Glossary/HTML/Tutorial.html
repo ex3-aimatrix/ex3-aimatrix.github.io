@@ -34,6 +34,30 @@
         </p>
     </div>
 
+    <div id="box">    
+        <h1> <span id="spanIcon"><i class="fas fa-check"></i></span> Good Job! </h1>
+        <h4>You scored 3/3</h4>
+        <h4>Incorrect Question : NA</h4> <br><br>
+        <i class="closeTr" onclick="document.location.href='dashboard.html'">Close</i>
+        
+      </div>
+    
+      <script type="text/javascript">
+    
+      var c = 0;
+      function pop(){
+        window.scrollTo(0, 0); 
+        if(c == 0){
+          document.getElementById("box").style.display = "block";
+          c = 1;
+        }else{
+         document.getElementById("box").style.display = "none";
+          c = 0;
+        }
+      }  
+     
+     </script>
+
     <div class="formLesson" style="height: 550px;">
         <h2>Q1 Sample Question</h2>
         
