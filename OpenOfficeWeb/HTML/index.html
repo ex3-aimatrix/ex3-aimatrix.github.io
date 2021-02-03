@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://kit.fontawesome.com/3c5797d8d4.js" crossorigin="anonymous"></script>  
+    <link href="../CSS/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>Open Office Support</title>
   </head>
@@ -30,48 +33,76 @@
         </div>
       </nav>  
       
-      <h1 class="display-4 mt-4 text-center">Open Office Installation Support</h1>
-
-      <div class="ms-5">
-        <h4 class="display-6 mt-5 ms-4 text-primary">Installation Guide For Windows</h4>
-      <ol class="fs-4 ms-5">
-          <li>Go To The <a href="https://sourceforge.net/projects/openofficeorg.mirror/files/4.1.8/binaries/en-US/Apache_OpenOffice_4.1.8_Win_x86_install_en-US.exe/download">Link</a> And Download OpenOffice Installer. (Latest OpenOffice Version 4.1.8)</li>
-          <li>Open The Installer And Allow OpenOffice To Make Changes To Your Device.</li>
-          <li>Click Next And Then Install. (Leave The Directory Set To Default)</li>
-          <li>Click Next.</li>
-          <li>Enter Your Username And Click Next.</li>
-          <li>Set The Installation To Typical (Default).</li>
-          <li>Click Install.</li>
-          <li>Click Finish. (Now Follow JRE Installation For Windows)</li>
-      </ol>  
+      <h1 class="display-4 mt-4 text-center">Open Office Installation Support</h1>   
       
-      <h4 class="display-6 mt-5 ms-4 text-primary">Installation Guide For Mac</h4>
-      <ol class="fs-4 ms-5">
-          <li>Go To The <a href="https://sourceforge.net/projects/openofficeorg.mirror/files/4.1.8/binaries/en-US/Apache_OpenOffice_4.1.8_MacOS_x86-64_install_en-US.dmg/download">Link</a> And Download OpenOffice Installer. (Latest OpenOffice Version 4.1.8))</li>
-          <li>Open The Installer And Drag OpenOffice To Application Folder. (Now Follow JRE Installation For Mac)</li>
-          <li>When You First Open OpenOffice You May Get An Error As Follows “Open Office Cannot Be Opened” As The Developer Cannot Be Verified.</li>
-          <li>Under System Preferences / Security & Privacy / General, There Will Be An Option To Open An App By "Forcing" It To Open. Once Opened, It Will Continue To Be Accessible.</li>          
-      </ol>  
-      
-      <h4 class="display-6 mt-5 ms-4 text-primary">To Install JRE For Windows Follow These Steps :</h4>
-      <ol class="fs-4 ms-5">
-          <li>Go To The <a href="https://javadl.oracle.com/webapps/download/AutoDL?BundleId=244066_89d678f2be164786b292527658ca1605">Link</a> And Download The Installer</li>
-          <li>Open The Installer And Click Install</li>   
-          <li>After The Installation Is Done Close The Installer.</li>
-          <li>Now You Can Run Your OpenOffice Without Any Problems.</li>       
-      </ol>
-
-      <h4 class="display-6 mt-5 ms-4 text-primary">To Install JRE For Mac Follow These Steps :</h4>
-      <ol class="fs-4 ms-5 mb-5">
-          <li>Go To The <a href="https://javadl.oracle.com/webapps/download/AutoDL?BundleId=244059_89d678f2be164786b292527658ca1605">Link</a> And Download The Installer</li>
-          <li>Open The Installer And Click Install</li>   
-          <li>After The Installation Is Done Close The Installer.</li>
-          <li>Now You Can Run Your OpenOffice Without Any Problems.</li>       
-      </ol>
-      </div>      
-
-      <div class="w-100 p-3 bg-primary text-center text-light mt-5"> &copy; Developed And Hosted By Ajay Pal Singh</div>
+        <div style="display: flex; justify-content: center;">
+            <div class="card text-white bg-primary ms-3 mb-3 mt-5" style="width: 55rem; margin-right: 10px;">
+                <div class="card-header fs-3"><i class="fab fa-windows" style="margin-right: 10px;"></i>Windows</div>
+                <div class="card-body">
+                <h5 class="card-title fs-4">Installation Guide For Windows</h5>
+                <p class="card-text">
+                    <ol class="fs-5 ms-5">
+                    <li>Go To The <a style="color: white;" href="https://sourceforge.net/projects/openofficeorg.mirror/files/4.1.8/binaries/en-US/Apache_OpenOffice_4.1.8_Win_x86_install_en-US.exe/download">Link</a> And Download OpenOffice Installer. (Latest OpenOffice Version 4.1.8)</li>
+                    <li>Open The Installer And Allow OpenOffice To Make Changes To Your Device.</li>
+                    <li>Click Next And Then Install. (Leave The Directory Set To Default)</li>
+                    <li>Click Next.</li>
+                    <li>Enter Your Username And Click Next.</li>
+                    <li>Set The Installation To Typical (Default).</li>
+                    <li>Click Install.</li>
+                    <li>Click Finish. (Now Follow JRE Installation For Windows)</li>
+                </ol></p>
+                </div>
+          </div>
+          
+          <div class="card text-white bg-dark ms-3 mb-3 mt-5" style="width: 55rem; margin-right: 10px;">
+                <div class="card-header fs-3"><i class="fab fa-apple" style="margin-right: 10px;"></i>Mac OS</div>
+                <div class="card-body">
+                <h5 class="card-title fs-4">Installation Guide For Mac OS</h5>
+                <p class="card-text">
+                    <ol class="fs-5 ms-5 scrollR">
+                        <li>Go To The <a style="color: white;" href="https://sourceforge.net/projects/openofficeorg.mirror/files/4.1.8/binaries/en-US/Apache_OpenOffice_4.1.8_MacOS_x86-64_install_en-US.dmg/download">Link</a> And Download OpenOffice Installer. (Latest OpenOffice Version 4.1.8))</li>
+                        <li>Open The Installer And Drag OpenOffice To Application Folder. (Now Follow JRE Installation For Mac)</li>
+                        <li>When You First Open OpenOffice You May Get An Error As Follows “Open Office Cannot Be Opened” As The Developer Cannot Be Verified.</li>
+                        <li>Under System Preferences / Security & Privacy / General, There Will Be An Option To Open An App By "Forcing" It To Open. Once Opened, It Will Continue To Be Accessible.</li>          
+                    </ol></p>
+                </div>
+            </div>
+        </div> 
         
+        <div style="display: flex; justify-content: center;">
+            <div class="card text-white bg-primary ms-3 mb-3 mt-5" style="width: 55rem; margin-right: 10px;">
+                <div class="card-header fs-3"><i class="fab fa-windows" style="margin-right: 10px;"></i>Windows</div>
+                <div class="card-body">
+                <h5 class="card-title fs-4">Installation Guide For Windows</h5>
+                <p class="card-text">
+                    <ol class="fs-4 ms-5 scrollR">
+                        <li>Go To The <a style="color: white;" href="https://javadl.oracle.com/webapps/download/AutoDL?BundleId=244066_89d678f2be164786b292527658ca1605">Link</a> And Download The Installer</li>
+                        <li>Open The Installer And Click Install</li>   
+                        <li>After The Installation Is Done Close The Installer.</li>
+                        <li>Now You Can Run Your OpenOffice Without Any Problems.</li>       
+                    </ol></p>
+                </div>
+          </div>
+          
+          <div class="card text-white bg-dark ms-3 mb-3 mt-5" style="width: 55rem; margin-right: 10px;">
+                <div class="card-header fs-3"><i class="fab fa-apple" style="margin-right: 10px;"></i>Mac OS</div>
+                <div class="card-body">
+                <h5 class="card-title fs-4">Installation Guide For Mac OS</h5>
+                <p class="card-text">
+                    <ol class="fs-4 ms-5 mb-5 scrollR">
+                        <li>Go To The <a  style="color: white;" href="https://javadl.oracle.com/webapps/download/AutoDL?BundleId=244059_89d678f2be164786b292527658ca1605">Link</a> And Download The Installer</li>
+                        <li>Open The Installer And Click Install</li>   
+                        <li>After The Installation Is Done Close The Installer.</li>
+                        <li>Now You Can Run Your OpenOffice Without Any Problems.</li>       
+                    </ol></p>
+                </div>
+            </div>
+        </div>    
+    
+      <div class="w-100 p-3 bg-primary text-center text-light mt-5"> &copy; Developed And Hosted By Ajay Pal Singh</div>
+    <script>ScrollReveal().reveal('.scrollR',{delay:300});
+                        
+      </script>   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>    
   </body>
 </html>
