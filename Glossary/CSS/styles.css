@@ -225,6 +225,7 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
+    z-index: 10;
     transform: translate(-50%,-50%);
     text-align: center;
     display: none;  
@@ -239,6 +240,10 @@ body{
   
   #box h1{
     color: #333;
+  }
+
+  #box h4{
+    margin : 2px 5px;
   }
   
   .closeTr{
@@ -447,3 +452,24 @@ body{
     margin-left: 625px;
   }
  
+  .loginError{
+    padding : 10px 25px;
+    margin-top:30px;
+    max-width:300px;
+    color: white;
+    text-align: center;
+    background-color:#eb4634;
+    visibility: hidden;
+  }
+
+  .errorInput{
+    padding : 10px 25px;
+    margin-top:30px;
+    margin-bottom: 50px;
+    max-width:300px;
+    color: white;
+    text-align: center;
+    background-color:#eb4634;
+    border-radius: 10px;
+    visibility:hidden;   
+  }

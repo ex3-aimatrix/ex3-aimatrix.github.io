@@ -19,34 +19,38 @@
 
     <!--Icon/Logo-->
     <link rel="icon" href="../Assets/Asset10.jpg" type="image/icon type">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js" integrity="sha512-nOQuvD9nKirvxDdvQ9OMqe2dgapbPB7vYAMrzJihw5m+aNcf0dX53m6YxM4LgA9u8e9eg9QX+/+mPu8kCNpV2A==" crossorigin="anonymous"></script>
 </head>
 <body background="../ASSETS/loginBackgroundEdited.jpg">
+    <script src="../JS/login.js"></script>
     <!--Navigation Header-->
     <ul class="topnav">
         <li><img class="logo" src="../ASSETS/Screenshot (34).png"></li>
-        <li><a href="home.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="About.html">About</a></li>
         <li><a href="Contact.html">Contact</a></li>
-        <li style="float: right;"><a href="Login.html"><i class="fas fa-user"></i> Login</a></li>
+        <li style="float: right; color: white;"><a href="Login.html" style="color: white;"><i class="fas fa-user" style="color: white;"></i> Login</a></li>
     </ul>
 
     <div class="loginForm">
         <h1>Login</h1>
         <br>
         <div class="inputTextWithIcon">
-            <input type="text" class="feedbackName" placeholder="Name" >
+            <input type="text" class="feedbackName" placeholder="Name" id="txtUsername">
             <i class="fas fa-user"></i>
         </div> 
         <br>
         <div class="inputTextWithIcon">
-            <input type="password" class="feedbackName" placeholder="Password" >
+            <input type="password" class="feedbackName" placeholder="Password" id="txtPassword">
             <i class="fas fa-lock"></i>
         </div> 
         <br>
-            <input type="checkbox"  value=""> Remember Me
+            <input type="checkbox"  value="" id="cRemember"> Remember Me
         <br>
         <br>
-        <a href="../HTML/Dashboard.html" class="btnGreenRounded">Login</a>
+        <a class="btnGreenRounded" id="bLogin" onclick="login()">Login</a>
+        
+        <p class="loginError" id="lError">An Error Has Occured</p>
     </div>
     
     <!--End-->

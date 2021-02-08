@@ -18,13 +18,14 @@
     <script src="https://kit.fontawesome.com/3c5797d8d4.js" crossorigin="anonymous"></script>  
 
     <!--Icon/Logo-->
-    <link rel="icon" href="../Assets/Asset10.jpg" type="image/icon type">
+    <link rel="icon" href="../Assets/Asset10.jpg" type="image/icon type">    
 </head>
 <body>
+    <script src="../JS/home.js"></script>
     <!--Navigation Header-->
     <ul class="topnav">
         <li><img class="logo" src="../ASSETS/Screenshot (34).png"></li>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" style="color: white;">Home</a></li>
         <li><a href="About.html">About</a></li>
         <li><a href="Contact.html">Contact</a></li>
         <li style="float: right;"><a href="Login.html"><i class="fas fa-user"></i> Login</a></li>
@@ -38,7 +39,7 @@
         <p>Welcome We Have Many Courses Available Pick Any One You Like With Ease Of Click Of A Button.
           Our Aim Is To Make The Most Efficent Courses For All Our Users. Glossary.com Is Dedicated To Serving You
           The Best Language And Literature Possibly You Could Get.
-        </p>
+        </p>        
     </div>
 
     <!--Quotation Header-->
@@ -56,33 +57,35 @@
             <img src="../ASSETS/tutorial.png">
             <h3 class="boxTitle"> Tutorial </h3> 
             <h4 class="desc">You will learn how to use the features of the website and get the best out of it.</h4>     
-            <div class="boxBtn"><a href="../HTML/Login.html" class="btnBlueRounded">Tutorial</a></div>
+            <div class="boxBtn"><a onclick="isLoggedIn(1)"  class="btnBlueRounded">Tutorial</a></div>
             <h4 class="boxLastUpdated"> Last Updated 3 Mins Ago</h4> 
         </div>
         <div class="box">
             <img src="../ASSETS/lesson.jpeg">
             <h3 class="boxTitle"> Lesson 1 </h3> 
             <h4 class="desc">You will learn basic words and their meanings with examples to implement them in real life.</h4>     
-            <div class="boxBtn"><a href="../HTML/Login.html" class="btnBlueRounded">Lesson 1</a></div>
+            <div class="boxBtn"><a onclick="isLoggedIn(2)" class="btnBlueRounded">Lesson 1</a></div>
             <h4 class="boxLastUpdated"> Last Updated 3 Mins Ago</h4> 
         </div>
         <div class="box">
             <img src="../ASSETS/lesson.jpeg">
             <h3 class="boxTitle"> Lesson 2 </h3> 
             <h4 class="desc">You will learn basic words and their meanings with examples to implement them in real life.</h4>     
-            <div class="boxBtn"><a href="../HTML/Login.html" class="btnBlueRounded">Lesson 2</a></div>
+            <div class="boxBtn"><a onclick="isLoggedIn(3)"  class="btnBlueRounded">Lesson 2</a></div>
             <h4 class="boxLastUpdated"> Last Updated 3 Mins Ago</h4> 
         </div>
         <div class="box">
             <img src="../ASSETS/lesson.jpeg">
             <h3 class="boxTitle"> Lesson 3 </h3> 
             <h4 class="desc">You will learn basic words and their meanings with examples to implement them in real life.</h4>     
-            <div class="boxBtn"><a href="../HTML/Login.html" class="btnBlueRounded">Lesson 3</a></div>
+            <div class="boxBtn"><a  onclick="isLoggedIn(4) "  class="btnBlueRounded">Lesson 3</a></div>
             <h4 class="boxLastUpdated"> Last Updated 3 Mins Ago</h4> 
         </div>
     </div> 
 
 
     <!--End-->
+
+   
 </body>
 </html>

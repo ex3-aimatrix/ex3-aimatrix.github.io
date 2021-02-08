@@ -19,8 +19,15 @@
 
     <!--Icon/Logo-->
     <link rel="icon" href="../Assets/Asset10.jpg" type="image/icon type">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.1.min.js"></script>
 </head>
 <body style="background-image: url(../ASSETS/BackGroundQuizEdited.jpg);">
+
+    <script src="../JS/check.js"></script>
+    <script src="../JS/checker.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.1.min.js"></script>
+
     <!--Navigation Header-->
     <ul class="topnav">
         <li><a class="icnBack" href="../HTML/Dashboard.html"><i class="fas fa-arrow-circle-left"></i></a></li>
@@ -36,27 +43,11 @@
 
     <div id="box">    
         <h1> <span id="spanIcon"><i class="fas fa-check"></i></span> Good Job! </h1>
-        <h4>You scored 3/3</h4>
-        <h4>Incorrect Question : NA</h4> <br><br>
-        <i class="closeTr" onclick="document.location.href='Dashboard.html'">Close</i>
-        
-      </div>
-    
-      <script type="text/javascript">
-    
-      var c = 0;
-      function pop(){
-        window.scrollTo(0, 0); 
-        if(c == 0){
-          document.getElementById("box").style.display = "block";
-          c = 1;
-        }else{
-         document.getElementById("box").style.display = "none";
-          c = 0;
-        }
-      }  
-     
-     </script>
+        <h4 id="yS">Error</h4>
+        <h4 id="iA">Error</h4> <br><br>
+        <a class="closeTr" href="../HTML/Dashboard.html">Close</a>        
+    </div>
+      
 
     <div class="formLesson" style="height: 550px;">
         <h2>Q1 Sample Question</h2>
@@ -64,19 +55,19 @@
         <br>
 
         <label class="RadioCTR"> Option 1
-            <input type="radio" name="rd1">
+            <input type="radio" name="q1" value="Question 1 Option 1" id="O11">
             <span class="dot"></span>
         </label>
         <label class="RadioCTR"> Option 2
-            <input type="radio" name="rd1">
+            <input type="radio" name="q1" value="Question 1 Option 2" id="O12">
             <span class="dot"></span>
         </label>
         <label class="RadioCTR"> Option 3
-            <input type="radio" name="rd1">
+            <input type="radio" name="q1" value="Question 1 Option 3" id="O13">
             <span class="dot"></span>
         </label>
         <label class="RadioCTR"> Option 4
-            <input type="radio" name="rd1">
+            <input type="radio" name="q1" value="Question 1 Option 4" id="O14">
             <span class="dot"></span>
         </label>       
         
@@ -86,21 +77,21 @@
 
         <br>        
 
-        <label class="CheckboxCTR"> Option 1
-            <input type="checkbox">
-            <span class="checkmark"></span>
+        <label class="RadioCTR"> Option 1
+            <input type="radio" name="q2" value="Question 2 Option 1" id="O21">
+            <span class="dot"></span>
         </label>
-        <label class="CheckboxCTR"> Option 2
-            <input type="checkbox">
-            <span class="checkmark"></span>
+        <label class="RadioCTR"> Option 2
+            <input type="radio" name="q2" value="Question 2 Option 2" id="O22">
+            <span class="dot"></span>
         </label>
-        <label class="CheckboxCTR"> Option 3
-            <input type="checkbox">
-            <span class="checkmark"></span>
+        <label class="RadioCTR"> Option 3
+            <input type="radio" name="q2" value="Question 2 Option 3" id="O23">
+            <span class="dot"></span>
         </label>
-        <label class="CheckboxCTR"> Option 4
-            <input type="checkbox">
-            <span class="checkmark"></span>
+        <label class="RadioCTR"> Option 4
+            <input type="radio" name="q2" value="Question 2 Option 4" id="O24"> 
+            <span class="dot"></span>
         </label>       
         
         
@@ -112,7 +103,14 @@
         <br>
         <br>
 
-        <a class="btnGreenRounded" onclick="pop()">Submit</a>
+        <a class="btnGreenRounded" onclick="correctAns(1,0)">Submit</a>
+
+        <br>
+        <br>
+
+        <h4 class="errorInput" id="eIBox">Error</h4>
+
+        <br>
         
 
     </div>
